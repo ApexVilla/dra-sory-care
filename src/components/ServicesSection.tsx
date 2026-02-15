@@ -1,0 +1,68 @@
+import AnimateOnScroll from "./AnimateOnScroll";
+import { Baby, Heart, Apple, Brain, Users } from "lucide-react";
+
+const services = [
+  {
+    icon: Baby,
+    title: "Consulta Pediátrica",
+    desc: "Control integral del crecimiento y desarrollo de tu bebé con seguimiento personalizado.",
+  },
+  {
+    icon: Heart,
+    title: "Asesoría en Lactancia",
+    desc: "Acompañamiento profesional para una lactancia materna exitosa y placentera.",
+  },
+  {
+    icon: Apple,
+    title: "Alimentación Complementaria",
+    desc: "Guía experta para introducir alimentos de forma segura y nutritiva.",
+  },
+  {
+    icon: Brain,
+    title: "Conducta Infantil",
+    desc: "Orientación sobre el desarrollo emocional y conductual de tu hijo.",
+  },
+  {
+    icon: Users,
+    title: "Talleres para Madres",
+    desc: "Espacios de aprendizaje grupal sobre crianza, lactancia y nutrición.",
+  },
+];
+
+const ServicesSection = () => {
+  return (
+    <section id="servicios" className="section-padding bg-gradient-hero">
+      <div className="container mx-auto">
+        <AnimateOnScroll className="text-center mb-16">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Servicios
+          </h2>
+          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
+            Atención integral para cada etapa del crecimiento de tu bebé
+          </p>
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
+        </AnimateOnScroll>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, i) => (
+            <AnimateOnScroll key={i} delay={i * 100}>
+              <div className="group bg-card rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-lilac flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                  <service.icon size={26} className="text-primary" />
+                </div>
+                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                  {service.title}
+                </h3>
+                <p className="font-body text-muted-foreground leading-relaxed">
+                  {service.desc}
+                </p>
+              </div>
+            </AnimateOnScroll>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;
