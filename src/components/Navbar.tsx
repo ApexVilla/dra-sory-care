@@ -5,6 +5,7 @@ const navItems = [
   { label: "Inicio", href: "#inicio" },
   { label: "Sobre mí", href: "#sobre" },
   { label: "Servicios", href: "#servicios" },
+  { label: "Galería", href: "#galeria" },
   { label: "Testimonios", href: "#testimonios" },
   { label: "Contacto", href: "#contacto" },
 ];
@@ -21,13 +22,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-card/90 backdrop-blur-md shadow-sm" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass-panel" : "bg-transparent py-2"
+        }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#inicio" className="font-display text-2xl font-bold text-primary">
-          Dra. Sory
+        <a href="#inicio" className="flex items-baseline gap-1.5 text-primary hover:opacity-80 transition-opacity">
+          <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
+          <span className="font-script text-4xl font-normal leading-none" translate="no">Sory</span>
         </a>
 
         {/* Desktop */}
@@ -36,9 +37,10 @@ const Navbar = () => {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="font-body text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="relative font-body text-sm font-semibold text-muted-foreground hover:text-primary transition-colors group py-2"
               >
                 {item.label}
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
               </a>
             </li>
           ))}
@@ -47,7 +49,7 @@ const Navbar = () => {
               href="https://wa.me/5491100000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               Agendar consulta
             </a>
@@ -66,7 +68,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-card/95 backdrop-blur-md border-t border-border animate-fade-up">
+        <div className="md:hidden glass-panel border-t border-white/20 animate-fade-up">
           <ul className="flex flex-col items-center gap-4 py-6">
             {navItems.map((item) => (
               <li key={item.href}>

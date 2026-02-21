@@ -13,16 +13,18 @@ const BenefitsSection = () => {
     <section className="section-padding bg-card">
       <div className="container mx-auto">
         <AnimateOnScroll className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Por qué elegir a la Dra. Sory?
+          <h2 className="text-foreground mb-4">
+            <span className="font-display text-3xl md:text-5xl font-bold inline-block mr-3">¿Por qué elegir a la</span>
+            <span className="font-sans font-medium text-2xl md:text-4xl inline-block mr-1.5">Dra.</span>
+            <span className="font-script text-5xl md:text-6xl font-normal text-primary tracking-wide inline-block">Sory?</span>
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </AnimateOnScroll>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((b, i) => (
-            <AnimateOnScroll key={i} delay={i * 100} className="text-center">
-              <div className="w-16 h-16 rounded-full bg-lilac flex items-center justify-center mx-auto mb-5">
+            <AnimateOnScroll key={i} delay={i * 100} className="text-center group hover-lift p-6 rounded-3xl transition-all">
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-lilac to-background shadow-sm flex items-center justify-center mx-auto mb-6 group-hover:shadow-md transition-all">
                 <b.icon size={28} className="text-primary" />
               </div>
               <h3 className="font-display text-lg font-semibold text-foreground mb-2">{b.title}</h3>

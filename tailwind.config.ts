@@ -15,7 +15,9 @@ export default {
     extend: {
       fontFamily: {
         display: ["Playfair Display", "serif"],
-        body: ["Nunito", "sans-serif"],
+        body: ["Montserrat", "sans-serif"],
+        script: ["Great Vibes", "cursive"],
+        sans: ["Montserrat", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

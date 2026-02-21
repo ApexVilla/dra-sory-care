@@ -46,8 +46,9 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <AnimateOnScroll key={i} delay={i * 100}>
-              <div className="group bg-card rounded-2xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/30 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-lilac flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+              <div className="group glass-panel rounded-3xl p-8 hover-lift border border-white/60 h-full relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-bl-full -z-10 transition-transform group-hover:scale-110" />
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-lilac to-rose/30 flex items-center justify-center mb-6 shadow-inner group-hover:shadow-md transition-all duration-300">
                   <service.icon size={26} className="text-primary" />
                 </div>
                 <h3 className="font-display text-xl font-semibold text-foreground mb-3">

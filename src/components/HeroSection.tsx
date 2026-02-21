@@ -1,40 +1,51 @@
 import heroImg from "@/assets/hero-doctor.jpg";
-import { Heart, MessageCircle } from "lucide-react";
+import heroBg from "@/assets/hero-bg.png";
+import { Heart, MessageCircle, Baby } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
       {/* Decorative blobs */}
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-lilac opacity-40 blur-3xl animate-float" />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-rose opacity-30 blur-3xl animate-float" style={{ animationDelay: "3s" }} />
 
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center pt-24 pb-16">
+      <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center pt-24 pb-16 relative z-10">
         {/* Text */}
         <div className="space-y-6 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-lilac px-4 py-1.5 text-sm font-medium text-primary">
-            <Heart size={14} />
+          <div className="inline-flex items-center gap-2 rounded-full bg-lilac px-4 py-1.5 text-2xl font-script tracking-wide text-primary">
+            <Heart size={16} />
             Pediatría con amor
           </div>
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-up">
-            Dra. Sory
+          <h1 className="text-foreground leading-tight animate-fade-up tracking-tight mb-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
+            <div className="w-16 h-16 rounded-full border border-primary/50 flex items-center justify-center bg-transparent">
+              <Baby size={32} className="text-primary" strokeWidth={1.5} />
+            </div>
+            <div>
+              <span className="font-sans font-medium text-4xl md:text-5xl lg:text-6xl inline-block mr-3">Dra.</span>
+              <span className="font-script text-6xl md:text-7xl lg:text-8xl font-normal text-primary" translate="no">Sory</span>
+            </div>
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Pediatra y especialista en lactancia y alimentación infantil. Acompañando a madres y bebés con calidez y profesionalismo.
+          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-up font-medium" style={{ animationDelay: "0.2s" }}>
+            Pediatra Puericultor · Prolactancia
+          </p>
+          <p className="font-body text-base md:text-lg text-muted-foreground max-w-lg animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            Acompañando a madres y bebés con calidez y profesionalismo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <a
-              href="https://wa.me/5491100000000"
+              href="https://wa.me/584240000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg hover:opacity-90 transition-all hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover-lift transition-all"
             >
               Agendar consulta
             </a>
             <a
-              href="https://wa.me/5491100000000"
+              href="https://wa.me/584240000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-primary bg-card px-8 py-4 text-base font-semibold text-primary hover:bg-lilac transition-all"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-primary/20 bg-white/50 backdrop-blur-sm px-8 py-4 text-base font-semibold text-primary hover:bg-white hover:border-primary/50 hover-lift transition-all"
             >
               <MessageCircle size={18} />
               WhatsApp
@@ -48,7 +59,7 @@ const HeroSection = () => {
             <img
               src={heroImg}
               alt="Dra. Sory - Pediatra"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
             />
           </div>
           {/* Floating badge */}
@@ -63,7 +74,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 
