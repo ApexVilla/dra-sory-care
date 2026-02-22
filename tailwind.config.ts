@@ -63,6 +63,7 @@ export default {
         },
         rose: "hsl(var(--rose))",
         sage: "hsl(var(--sage))",
+        purple: "hsl(var(--purple))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

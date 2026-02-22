@@ -2,7 +2,7 @@ import { Heart } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground py-10">
+    <footer className="bg-[hsl(var(--purple))] py-10">
       <div className="container mx-auto text-center space-y-4">
         <div className="flex items-baseline justify-center gap-2 text-primary-foreground mb-2">
           <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
