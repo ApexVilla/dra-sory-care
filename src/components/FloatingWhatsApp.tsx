@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const FloatingWhatsApp = () => {
@@ -27,7 +27,7 @@ const FloatingWhatsApp = () => {
                 }`}
             aria-label="Contactar por WhatsApp"
         >
-            <MessageCircle size={32} />
+            <FaWhatsapp size={32} />
 
             {/* Ripple effect */}
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-30"></span>
