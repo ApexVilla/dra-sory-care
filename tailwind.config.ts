@@ -14,9 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "serif"],
+        display: ["Montserrat", "sans-serif"],
         body: ["Montserrat", "sans-serif"],
-        script: ["Great Vibes", "cursive"],
         sans: ["Montserrat", "sans-serif"],
       },
       colors: {

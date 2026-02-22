@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-baseline gap-1.5 text-primary hover:opacity-80 transition-opacity">
           <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
-          <span className="font-script text-4xl font-normal leading-none" translate="no">Sory</span>
+          <span className="font-display text-2xl font-semibold leading-none" translate="no">Sory</span>
         </a>
 
         {/* Desktop */}

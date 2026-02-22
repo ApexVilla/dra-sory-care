@@ -7,9 +7,9 @@ const AboutSection = () => {
       <div className="container mx-auto">
         <AnimateOnScroll className="text-center mb-16">
           <h2 className="text-foreground mb-4">
-            <span className="font-display text-3xl md:text-5xl font-bold inline-block mr-3">Sobre la</span>
+            <span className="font-display text-3xl md:text-5xl font-semibold inline-block mr-3">Sobre la</span>
             <span className="font-sans font-medium text-2xl md:text-4xl inline-block mr-1.5">Dra.</span>
-            <span className="font-script text-5xl md:text-6xl font-normal text-primary tracking-wide inline-block" translate="no">Sory</span>
+            <span className="font-display text-3xl md:text-5xl font-semibold text-primary tracking-tight inline-block" translate="no">SORY</span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </AnimateOnScroll>

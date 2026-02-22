@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -54,7 +54,7 @@
     --purple: 270 27% 57%;
     /* Roxo #8f71b2 */
 
-    --font-display: 'Playfair Display', serif;
+    --font-display: 'Montserrat', sans-serif;
     --font-body: 'Montserrat', sans-serif;
 
     --sidebar-background: 0 0% 98%;
@@ -76,6 +76,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    font-weight: 400;
   }
 
   h1,
@@ -85,6 +86,9 @@
   h5,
   h6 {
     font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: hsl(var(--foreground));
   }
 }
 

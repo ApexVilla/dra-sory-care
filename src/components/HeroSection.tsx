@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center pt-24 pb-16 relative z-10">
         {/* Text */}
         <div className="space-y-6 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-secondary/80 px-4 py-1.5 text-2xl font-script tracking-wide text-secondary-foreground">
+          <div className="inline-flex items-center gap-2 rounded-full bg-secondary/80 px-4 py-1.5 text-base font-semibold tracking-tight text-secondary-foreground">
             <Heart size={16} />
             Pediatría con amor
           </div>
@@ -23,7 +23,7 @@ const HeroSection = () => {
             </div>
             <div>
               <span className="font-sans font-medium text-4xl md:text-5xl lg:text-6xl inline-block mr-3">Dra.</span>
-              <span className="font-script text-6xl md:text-7xl lg:text-8xl font-normal text-primary" translate="no">Sory</span>
+              <span className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold text-primary" translate="no">SORY</span>
             </div>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-up font-medium" style={{ animationDelay: "0.2s" }}>

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto text-center space-y-4">
         <div className="flex items-baseline justify-center gap-2 text-primary-foreground mb-2">
           <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
-          <span className="font-script text-4xl font-normal leading-none" translate="no">Sory</span>
+          <span className="font-display text-2xl font-bold leading-none" translate="no">Sory</span>
         </div>
         <p className="font-body text-sm text-primary-foreground/80 font-medium">
           Dra. Soraya N. Sánchez R.
