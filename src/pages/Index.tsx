@@ -6,6 +6,7 @@ import CoursesSection from "@/components/CoursesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import ScheduleSection from "@/components/ScheduleSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -21,6 +22,7 @@ const Index = () => {
       <BenefitsSection />
       <GallerySection />
       <TestimonialsSection />
+      <ScheduleSection />
       <ContactSection />
       <Footer />
       <FloatingWhatsApp />
