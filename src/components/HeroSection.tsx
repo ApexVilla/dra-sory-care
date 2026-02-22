@@ -68,8 +68,8 @@ const HeroSection = () => {
               <Heart size={18} className="text-secondary-foreground" />
             </div>
             <div>
-              <p className="text-sm font-bold text-foreground">+10 años</p>
-              <p className="text-xs text-muted-foreground">de experiencia</p>
+              <p className="text-sm font-bold text-foreground">22 años</p>
+              <p className="text-xs text-muted-foreground">de pediatra</p>
             </div>
           </div>
         </div>

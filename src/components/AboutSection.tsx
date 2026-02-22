@@ -19,7 +19,7 @@ const AboutSection = () => {
             <div className="space-y-6">
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 <span className="font-semibold text-foreground">Dra. Soraya N. Sánchez R.</span>, Especialista Pediatra Puericultor y experta en Prolactancia.
-                Con más de 10 años de experiencia dedicada a la salud infantil, se ha especializado en brindar atención pediátrica integral, con un enfoque especial en lactancia materna y alimentación complementaria.
+                Con más de <span className="font-semibold text-foreground">35 años</span> como médico y <span className="font-semibold text-foreground">22 años</span> dedicada exclusivamente a la pediatría, se ha especializado en brindar atención pediátrica integral, con un enfoque especial en lactancia materna y alimentación complementaria.
               </p>
               <p className="font-body text-lg text-muted-foreground leading-relaxed">
                 Su pasión por acompañar a madres y familias en las primeras etapas de la vida de sus bebés la ha convertido en una referente en el área, combinando conocimiento científico con un trato cálido y cercano.
