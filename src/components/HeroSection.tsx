@@ -13,13 +13,13 @@ const HeroSection = () => {
       <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center pt-24 pb-16 relative z-10">
         {/* Text */}
         <div className="space-y-6 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-lilac px-4 py-1.5 text-2xl font-script tracking-wide text-primary">
+          <div className="inline-flex items-center gap-2 rounded-full bg-secondary/80 px-4 py-1.5 text-2xl font-script tracking-wide text-secondary-foreground">
             <Heart size={16} />
             Pediatría con amor
           </div>
           <h1 className="text-foreground leading-tight animate-fade-up tracking-tight mb-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
-            <div className="w-16 h-16 rounded-full border border-primary/50 flex items-center justify-center bg-transparent">
-              <Baby size={32} className="text-primary" strokeWidth={1.5} />
+            <div className="w-16 h-16 rounded-full border border-secondary flex items-center justify-center bg-transparent">
+              <Baby size={32} className="text-secondary" strokeWidth={1.5} />
             </div>
             <div>
               <span className="font-sans font-medium text-4xl md:text-5xl lg:text-6xl inline-block mr-3">Dra.</span>
@@ -34,15 +34,15 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <a
-              href="https://wa.me/584240000000"
+              href="https://wa.me/584126672489"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover-lift transition-all"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-8 py-4 text-base font-semibold text-secondary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.1)] hover-lift transition-all"
             >
               Agendar consulta
             </a>
             <a
-              href="https://wa.me/584240000000"
+              href="https://wa.me/584126672489"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-primary/20 bg-white/50 backdrop-blur-sm px-8 py-4 text-base font-semibold text-primary hover:bg-white hover:border-primary/50 hover-lift transition-all"
@@ -63,9 +63,9 @@ const HeroSection = () => {
             />
           </div>
           {/* Floating badge */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card rounded-2xl shadow-lg px-6 py-3 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-sage flex items-center justify-center">
-              <Heart size={18} className="text-primary" />
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card rounded-2xl shadow-lg px-6 py-3 flex items-center gap-3 border border-secondary/20">
+            <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center">
+              <Heart size={18} className="text-secondary-foreground" />
             </div>
             <div>
               <p className="text-sm font-bold text-foreground">+10 años</p>

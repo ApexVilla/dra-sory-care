@@ -47,7 +47,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-body text-sm font-semibold">Teléfono / WhatsApp</p>
-                    <p className="font-body text-sm text-muted-foreground">+58 424 000 00 00</p>
+                    <p className="font-body text-sm text-muted-foreground">+58 412-6672489</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -76,10 +76,10 @@ const ContactSection = () => {
               </div>
 
               <a
-                href="https://wa.me/584240000000"
+                href="https://wa.me/584126672489"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover-lift transition-all mt-4 relative z-10"
+                className="inline-flex items-center justify-center gap-3 rounded-full bg-secondary px-8 py-4 text-base font-semibold text-secondary-foreground shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover-lift transition-all mt-4 relative z-10"
               >
                 <MessageCircle size={22} />
                 Contactar por WhatsApp
@@ -112,7 +112,7 @@ const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-foreground text-background px-8 py-4 text-base font-semibold hover:bg-primary transition-colors disabled:opacity-70 disabled:cursor-not-allowed group"
+                  className="w-full flex items-center justify-center gap-2 rounded-xl bg-secondary text-secondary-foreground px-8 py-4 text-base font-semibold hover:bg-secondary/90 transition-colors disabled:opacity-70 disabled:cursor-not-allowed group"
                 >
                   {isSubmitting ? (
                     "Enviando..."
