@@ -6,19 +6,19 @@ const scheduleData = [
         day: "Todos los Lunes",
         location: "MAIA, piso 3, torre de hospitalización, centro médico Paraiso",
         icon: Calendar,
-        color: "bg-primary/10 text-primary",
+        color: "bg-primary text-white",
     },
     {
         day: "Previa Cita",
         location: "Unidad de lactancia, piso 4, torre de hospitalización, Centro Médico Paraiso",
         icon: Clock,
-        color: "bg-secondary/20 text-secondary-foreground",
+        color: "bg-secondary text-primary",
     },
     {
         day: "Todos los días",
         location: "Consultas a domicilio",
         icon: Home,
-        color: "bg-lilac/30 text-primary",
+        color: "bg-primary/20 text-primary",
     },
 ];
 

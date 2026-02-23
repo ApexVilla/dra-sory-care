@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4">
         <a href="#inicio" className="flex items-baseline gap-1.5 text-primary hover:opacity-80 transition-opacity">
           <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
-          <span className="font-display text-2xl font-semibold leading-none" translate="no">Sory</span>
+          <span className="font-display text-2xl font-bold leading-none" translate="no">SORY</span>
         </a>
 
         {/* Desktop */}
@@ -38,7 +38,7 @@ const Navbar = () => {
             <li key={item.href}>
               <a
                 href={item.href}
-                className="relative font-body text-sm font-semibold text-muted-foreground hover:text-primary transition-colors group py-2"
+                className="relative font-body text-sm font-semibold text-foreground/70 hover:text-primary transition-colors group py-2"
               >
                 {item.label}
                 <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full rounded-full"></span>
@@ -50,7 +50,7 @@ const Navbar = () => {
               href="https://wa.me/584126672489"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-secondary px-6 py-2.5 text-sm font-semibold text-secondary-foreground hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
               Agendar consulta
             </a>

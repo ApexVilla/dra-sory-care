@@ -19,7 +19,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center justify-center gap-1 text-primary-foreground/40 text-xs mt-4">
           <span>Hecho con</span>
-          <Heart size={12} className="text-accent" />
+          <Heart size={12} className="text-primary-foreground/60 fill-current" />
           <span>para las familias</span>
         </div>
       </div>

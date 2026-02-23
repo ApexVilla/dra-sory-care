@@ -8,50 +8,50 @@
   :root {
     --background: 0 0% 100%;
     /* Branco #ffffff */
-    --foreground: 0 0% 30%;
-    /* Cinza escuro */
+    --foreground: 267 27% 20%;
+    /* Púrpura muito escuro para texto #2d233c */
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 30%;
+    --card-foreground: 267 27% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 30%;
+    --popover-foreground: 267 27% 20%;
 
-    --primary: 312 83% 73%;
-    /* Rosa #f380dc */
+    --primary: 267 27% 57%;
+    /* Roxo #8f71b2 (Protagonista) */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 55 93% 59%;
-    /* Amarelo #f7ea35 */
-    --secondary-foreground: 0 0% 20%;
+    --secondary: 259 39% 85%;
+    /* Lilás claro #d4cbe8 (Protagonista) */
+    --secondary-foreground: 267 27% 30%;
 
-    --muted: 178 20% 96%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 259 39% 97%;
+    --muted-foreground: 267 10% 50%;
 
     --accent: 55 93% 59%;
-    /* Amarelo #f7ea35 */
-    --accent-foreground: 0 0% 20%;
+    /* Amarillo #f7ea35 (Secundario/Detalle) */
+    --accent-foreground: 267 27% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 178 20% 90%;
-    --input: 178 20% 90%;
-    --ring: 312 83% 73%;
-    /* Rosa */
+    --border: 259 39% 90%;
+    --input: 259 39% 90%;
+    --ring: 267 27% 57%;
+    /* Roxo */
 
     --radius: 1rem;
 
-    --warm: 0 0% 98%;
-    --warm-foreground: 0 0% 30%;
+    --warm: 259 39% 98%;
+    --warm-foreground: 267 27% 30%;
     --lilac: 178 43% 85%;
-    /* Ciano #c7edec */
-    --lilac-deep: 270 27% 57%;
+    /* Celeste/Ciano #c7edec (Secundario/Detalle) */
+    --lilac-deep: 267 27% 57%;
     /* Roxo #8f71b2 */
-    --rose: 178 30% 92%;
-    /* Ciano claro */
-    --sage: 178 20% 95%;
-    --purple: 270 27% 57%;
+    --rose: 312 83% 73%;
+    /* Rosado #f380dc (Secundario/Detalle) */
+    --sage: 259 20% 95%;
+    --purple: 267 27% 57%;
     /* Roxo #8f71b2 */
 
     --font-display: 'Montserrat', sans-serif;
@@ -59,12 +59,12 @@
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 312 83% 73%;
+    --sidebar-primary: 267 27% 57%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 178 30% 95%;
-    --sidebar-accent-foreground: 270 27% 30%;
-    --sidebar-border: 178 15% 91%;
-    --sidebar-ring: 312 83% 73%;
+    --sidebar-accent: 259 39% 95%;
+    --sidebar-accent-foreground: 267 27% 30%;
+    --sidebar-border: 259 15% 91%;
+    --sidebar-ring: 267 27% 57%;
   }
 }
 
@@ -99,11 +99,11 @@
   }
 
   .bg-gradient-soft {
-    background: linear-gradient(135deg, hsl(var(--lilac)/0.6), hsl(var(--rose)/0.6), hsl(var(--warm)/0.6));
+    background: linear-gradient(135deg, hsl(var(--lilac)/0.4), hsl(var(--rose)/0.4), hsl(var(--warm)/0.4));
   }
 
   .bg-gradient-hero {
-    background: linear-gradient(160deg, hsl(var(--lilac)/0.4) 0%, hsl(var(--background)) 40%, hsl(var(--rose)/0.3) 100%);
+    background: linear-gradient(160deg, hsl(var(--lilac)/0.3) 0%, hsl(var(--background)) 50%, hsl(var(--secondary)/0.2) 100%);
   }
 
   .section-padding {

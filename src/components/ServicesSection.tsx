@@ -46,15 +46,19 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <AnimateOnScroll key={i} delay={i * 100}>
-              <div className="group glass-panel rounded-3xl p-8 hover-lift border border-white/60 h-full relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-bl-full -z-10 transition-transform group-hover:scale-110" />
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-lilac to-rose/30 flex items-center justify-center mb-6 shadow-inner group-hover:shadow-md transition-all duration-300">
-                  <service.icon size={26} className="text-primary" />
+              <div className="group glass-panel rounded-3xl p-8 hover-lift border border-white/60 h-full relative overflow-hidden bg-white">
+                {/* Decorative blob in brand lilac */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-secondary/30 to-transparent rounded-bl-full -z-10 transition-transform group-hover:scale-110" />
+
+                {/* Icon square in dark purple with white icon */}
+                <div className="w-14 h-14 rounded-2xl bg-primary shadow-lg shadow-primary/20 flex items-center justify-center mb-6 group-hover:shadow-primary/40 transition-all duration-300">
+                  <service.icon size={26} className="text-white" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+
+                <h3 className="font-display text-xl font-bold text-foreground mb-3">
                   {service.title}
                 </h3>
-                <p className="font-body text-muted-foreground leading-relaxed">
+                <p className="font-body text-foreground/80 leading-relaxed font-medium">
                   {service.desc}
                 </p>
               </div>
