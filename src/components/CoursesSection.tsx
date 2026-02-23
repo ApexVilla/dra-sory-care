@@ -1,7 +1,7 @@
 import AnimateOnScroll from "./AnimateOnScroll";
-import lactationImg from "/home/samir/.gemini/antigravity/brain/105b8519-d6f6-4396-b907-e89083eddc2f/lactation_course_image_1771804098647.png";
-import feedingImg from "/home/samir/.gemini/antigravity/brain/105b8519-d6f6-4396-b907-e89083eddc2f/feeding_course_image_1771804113401.png";
-import prenatalImg from "/home/samir/.gemini/antigravity/brain/105b8519-d6f6-4396-b907-e89083eddc2f/prenatal_workshop_image_1771804744024.png";
+import lactationImg from "../assets/courses/lactation.png";
+import feedingImg from "../assets/courses/feeding.png";
+import prenatalImg from "../assets/courses/prenatal.png";
 import { BookOpen, ArrowRight, Laptop } from "lucide-react";
 
 const courses = [
