@@ -37,10 +37,10 @@ const CoursesSection = () => {
                         <Laptop size={16} />
                         ¡A un solo click de distancia!
                     </div>
-                    <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
+                    <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
                         Talleres Online y Presenciales
                     </h2>
-                    <p className="font-body text-lg text-foreground/80 max-w-2xl mx-auto font-medium">
+                    <p className="font-body text-lg text-primary/80 max-w-2xl mx-auto font-medium">
                         Agenda conmigo tus talleres y consultas pediátricas online. Formación práctica para empoderar a tu familia.
                     </p>
                     <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mt-6" />
@@ -49,7 +49,7 @@ const CoursesSection = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {courses.map((course, i) => (
                         <AnimateOnScroll key={i} delay={i * 200}>
-                            <div className="group glass-panel rounded-[2.5rem] overflow-hidden hover-lift border-primary/5 h-full flex flex-col bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-xl transition-all duration-300">
+                            <div className="group glass-panel rounded-[2.5rem] overflow-hidden hover-lift border-primary/10 h-full flex flex-col bg-white/50 backdrop-blur-sm shadow-sm hover:shadow-xl transition-all duration-300">
                                 <div className="relative h-64 overflow-hidden">
                                     <div className={`absolute inset-0 bg-gradient-to-br ${course.color} opacity-30 mix-blend-multiply z-10`} />
                                     <img
@@ -65,10 +65,10 @@ const CoursesSection = () => {
                                 </div>
 
                                 <div className="p-8 flex flex-col flex-grow">
-                                    <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-4 leading-tight">
+                                    <h3 className="font-display text-xl md:text-2xl font-bold text-primary mb-4 leading-tight">
                                         {course.title}
                                     </h3>
-                                    <p className="font-body text-sm text-foreground/70 leading-relaxed mb-8 flex-grow font-medium">
+                                    <p className="font-body text-sm text-primary/70 leading-relaxed mb-8 flex-grow font-medium">
                                         {course.desc}
                                     </p>
 

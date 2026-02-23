@@ -34,10 +34,10 @@ const ServicesSection = () => {
     <section id="servicios" className="section-padding bg-gradient-hero">
       <div className="container mx-auto">
         <AnimateOnScroll className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
             Servicios
           </h2>
-          <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-body text-lg text-primary/80 max-w-2xl mx-auto font-medium">
             Atención integral para cada etapa del crecimiento de tu bebé
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
@@ -55,10 +55,10 @@ const ServicesSection = () => {
                   <service.icon size={26} className="text-white" />
                 </div>
 
-                <h3 className="font-display text-xl font-bold text-foreground mb-3">
+                <h3 className="font-display text-xl font-bold text-primary mb-3">
                   {service.title}
                 </h3>
-                <p className="font-body text-foreground/80 leading-relaxed font-medium">
+                <p className="font-body text-primary/80 leading-relaxed font-medium">
                   {service.desc}
                 </p>
               </div>

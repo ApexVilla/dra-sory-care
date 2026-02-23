@@ -20,10 +20,10 @@ const ContactSection = () => {
     <section id="contacto" className="section-padding bg-white relative">
       <div className="container mx-auto relative z-10">
         <AnimateOnScroll className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-primary mb-4">
             Agenda tu consulta
           </h2>
-          <p className="font-body text-lg text-foreground/80 max-w-xl mx-auto font-medium">
+          <p className="font-body text-lg text-primary/80 max-w-xl mx-auto font-medium">
             Estoy aquí para acompañarte. Comunícate conmigo y agenda tu cita.
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
@@ -35,8 +35,8 @@ const ContactSection = () => {
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 blur-3xl rounded-full -mr-20 -mt-20"></div>
 
               <div className="space-y-4 relative z-10">
-                <h3 className="font-display text-2xl font-bold text-foreground">Información de Contacto</h3>
-                <p className="font-body text-foreground/70 font-medium italic">Escríbeme para coordinar tu cita o si tienes alguna duda sobre mis servicios.</p>
+                <h3 className="font-display text-2xl font-bold text-primary">Información de Contacto</h3>
+                <p className="font-body text-primary/70 font-medium italic">Escríbeme para coordinar tu cita o si tienes alguna duda sobre mis servicios.</p>
               </div>
 
               <div className="space-y-6 relative z-10">
@@ -45,8 +45,8 @@ const ContactSection = () => {
                     <Phone size={20} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-body text-sm font-bold text-foreground">Teléfono / WhatsApp</p>
-                    <p className="font-body text-sm text-foreground/80 font-medium">+58 412-6672489</p>
+                    <p className="font-body text-sm font-bold text-primary">Teléfono / WhatsApp</p>
+                    <p className="font-body text-sm text-primary/80 font-medium">+58 412-6672489</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -54,8 +54,8 @@ const ContactSection = () => {
                     <MapPin size={20} className="text-primary" />
                   </div>
                   <div>
-                    <p className="font-body text-sm font-bold text-foreground">Ubicación</p>
-                    <p className="font-body text-sm text-foreground/80 font-medium">Consultorio Médico</p>
+                    <p className="font-body text-sm font-bold text-primary">Ubicación</p>
+                    <p className="font-body text-sm text-primary/80 font-medium">Consultorio Médico</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -68,8 +68,8 @@ const ContactSection = () => {
                     <Instagram size={20} className="text-primary group-hover:text-white transition-colors" />
                   </a>
                   <div>
-                    <p className="font-body text-sm font-bold text-foreground">Instagram</p>
-                    <p className="font-body text-sm text-foreground/80 font-medium">@DraSoryLM</p>
+                    <p className="font-body text-sm font-bold text-primary">Instagram</p>
+                    <p className="font-body text-sm text-primary/80 font-medium">@DraSoryLM</p>
                   </div>
                 </div>
               </div>
@@ -87,26 +87,26 @@ const ContactSection = () => {
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={200} className="h-full">
-            <div className="bg-white rounded-3xl p-10 h-full border border-primary/5 shadow-xl">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-6">Envíanos un mensaje</h3>
+            <div className="bg-white rounded-3xl p-10 h-full border border-primary/10 shadow-xl">
+              <h3 className="font-display text-2xl font-bold text-primary mb-6">Envíanos un mensaje</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-2 gap-5">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-bold text-foreground">Nombre</label>
-                    <input id="name" required type="text" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-foreground placeholder:text-foreground/30" placeholder="Tu nombre" />
+                    <label htmlFor="name" className="text-sm font-bold text-primary">Nombre</label>
+                    <input id="name" required type="text" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-primary placeholder:text-primary/30" placeholder="Tu nombre" />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-bold text-foreground">Teléfono</label>
-                    <input id="phone" type="tel" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-foreground placeholder:text-foreground/30" placeholder="Tu número" />
+                    <label htmlFor="phone" className="text-sm font-bold text-primary">Teléfono</label>
+                    <input id="phone" type="tel" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-primary placeholder:text-primary/30" placeholder="Tu número" />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-bold text-foreground">Email</label>
-                  <input id="email" required type="email" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-foreground placeholder:text-foreground/30" placeholder="tu@email.com" />
+                  <label htmlFor="email" className="text-sm font-bold text-primary">Email</label>
+                  <input id="email" required type="email" className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all font-body text-primary placeholder:text-primary/30" placeholder="tu@email.com" />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-bold text-foreground">Mensaje</label>
-                  <textarea id="message" required rows={4} className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none font-body text-foreground placeholder:text-foreground/30" placeholder="¿En qué puedo ayudarte?"></textarea>
+                  <label htmlFor="message" className="text-sm font-bold text-primary">Mensaje</label>
+                  <textarea id="message" required rows={4} className="w-full px-4 py-3 rounded-xl border border-primary/10 bg-secondary/5 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none font-body text-primary placeholder:text-primary/30" placeholder="¿En qué puedo ayudarte?"></textarea>
                 </div>
                 <button
                   type="submit"
