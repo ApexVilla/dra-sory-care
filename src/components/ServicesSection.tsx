@@ -5,7 +5,7 @@ const services = [
   {
     icon: Baby,
     title: "Consulta Pediátrica",
-    desc: "Control integral del crecimiento y desarrollo de tu bebé con seguimiento personalizado.",
+    desc: "Control integral del crecimiento y desarrollo de tu bebé, disponible de forma presencial u online.",
   },
   {
     icon: Heart,
