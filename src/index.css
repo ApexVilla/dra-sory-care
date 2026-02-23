@@ -8,8 +8,8 @@
   :root {
     --background: 0 0% 100%;
     /* Branco #ffffff */
-    --foreground: 267 27% 20%;
-    /* Púrpura muito escuro para texto #2d233c */
+    --foreground: 267 27% 25%;
+    /* Púrpura escuro visível para texto #3b2e4f */
 
     --card: 0 0% 100%;
     --card-foreground: 267 27% 20%;
