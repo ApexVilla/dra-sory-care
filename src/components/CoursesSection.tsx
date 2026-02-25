@@ -1,7 +1,7 @@
 import AnimateOnScroll from "./AnimateOnScroll";
-import lactationImg from "../assets/courses/lactation.png";
-import feedingImg from "../assets/courses/feeding.png";
-import prenatalImg from "../assets/courses/prenatal.png";
+import lactationImg from "../assets/courses/lactancia_materna_sory.png";
+import feedingImg from "../assets/courses/complementary_feeding_sory.png";
+import prenatalImg from "../assets/courses/taller_prenatal_sory.jpg";
 import { BookOpen, ArrowRight, Laptop } from "lucide-react";
 
 const courses = [

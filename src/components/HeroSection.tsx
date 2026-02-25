@@ -1,6 +1,7 @@
 import heroImg from "@/assets/hero-doctor.jpg";
 import heroBg from "@/assets/hero-bg.png";
-import { Heart, MessageCircle, Baby } from "lucide-react";
+import logoImg from "@/assets/logo_sory.png";
+import { Heart, MessageCircle } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -16,15 +17,15 @@ const HeroSection = () => {
             <Heart size={16} className="text-primary" />
             Pediatría con amor
           </div>
-          <h1 className="text-foreground leading-tight animate-fade-up tracking-tight mb-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
-            <div className="w-16 h-16 rounded-full border-2 border-primary/20 flex items-center justify-center bg-white/50 backdrop-blur-sm shadow-sm">
-              <Baby size={32} className="text-primary" strokeWidth={1.5} />
+          <div className="animate-fade-up tracking-tight mb-2 flex flex-col md:flex-row items-center justify-center md:justify-start gap-4">
+            <div className="relative">
+              <img
+                src={logoImg}
+                alt="Dra. Sory Care"
+                className="h-24 md:h-32 lg:h-40 w-auto object-contain"
+              />
             </div>
-            <div>
-              <span className="font-sans font-medium text-4xl md:text-5xl lg:text-6xl inline-block mr-3">Dra.</span>
-              <span className="font-display text-5xl md:text-7xl lg:text-8xl font-semibold text-primary" translate="no">SORY</span>
-            </div>
-          </h1>
+          </div>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-lg animate-fade-up font-medium" style={{ animationDelay: "0.2s" }}>
             Pediatra Puericultor · Prolactancia
           </p>

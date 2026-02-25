@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo_sory.png";
 
 const navItems = [
   { label: "Inicio", href: "#inicio" },
@@ -27,9 +28,12 @@ const Navbar = () => {
         }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#inicio" className="flex items-baseline gap-1.5 text-primary hover:opacity-80 transition-opacity">
-          <span className="font-sans font-medium text-xl tracking-wide">Dra.</span>
-          <span className="font-display text-2xl font-bold leading-none" translate="no">SORY</span>
+        <a href="#inicio" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <img
+            src={logoImg}
+            alt="Dra. Sory Care"
+            className="h-12 w-auto object-contain"
+          />
         </a>
 
         {/* Desktop */}
