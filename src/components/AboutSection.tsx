@@ -18,7 +18,7 @@ const AboutSection = () => {
           <AnimateOnScroll delay={100}>
             <div className="space-y-6">
               <p className="font-body text-lg text-foreground/90 leading-relaxed font-medium">
-                <span className="font-semibold text-foreground">Dra. Soraya N. Sánchez R.</span>, Especialista Pediatra Puericultor y experta en Prolactancia.
+                <span className="font-semibold text-foreground">Dra. Soraya N. Sánchez R.</span>, Soy especialista en pediatría, Puericultor y experta en Prolactancia.
                 Con más de <span className="font-semibold text-foreground">35 años</span> como médico y <span className="font-semibold text-foreground text-primary">22 años</span> dedicada exclusivamente a la pediatría, se ha especializado en brindar atención pediátrica integral, con un enfoque especial en lactancia materna y alimentación complementaria.
               </p>
               <p className="font-body text-lg text-foreground/80 leading-relaxed">

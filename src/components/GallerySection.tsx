@@ -12,6 +12,7 @@ import img8 from "@/assets/gallery_sory_8.jpg";
 import img9 from "@/assets/gallery_sory_9.jpg";
 import img10 from "@/assets/gallery_photo_3_1771714202441.png";
 import img11 from "@/assets/gallery_photo_4_1771714218437.png";
+import tallerPrenatalImg from "@/assets/courses/taller_prenatal_grupo.png";
 import {
     Carousel,
     CarouselContent,
@@ -39,6 +40,7 @@ const initialGalleryImages = [
     { src: img6, alt: "Acompañamiento en el parto y cuidado neonatal" },
     { src: img10, alt: "Asesoría de lactancia materna" },
     { src: img11, alt: "Alimentación complementaria saludable" },
+    { src: tallerPrenatalImg, alt: "Taller Prenatal Online" },
 ];
 
 const GallerySection = () => {
@@ -60,10 +62,10 @@ const GallerySection = () => {
             <div className="container mx-auto">
                 <AnimateOnScroll className="text-center mb-16">
                     <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
-                        Galeria de Experiências
+                        Mi Galería de Experiencias
                     </h2>
                     <p className="font-body text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Momentos de aprendizado, cuidado e conexão em nossas consultas e workshops.
+                        Momentos de aprendizaje, cuidado y conexión que comparto con cada familia en mis consultas y talleres.
                     </p>
                     <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-4" />
                 </AnimateOnScroll>
@@ -113,7 +115,7 @@ const GallerySection = () => {
                                                         {image.alt}
                                                     </p>
                                                     <p className="font-body text-white/70 text-sm">
-                                                        Dra. Sory Care - Experiência Real
+                                                        Dra. Sory Care - Experiencia Real
                                                     </p>
                                                 </div>
                                                 <DialogClose className="absolute top-4 right-4 z-50 rounded-full bg-white/10 p-2 text-white/70 hover:bg-white/20 hover:text-white transition-all backdrop-blur-md">

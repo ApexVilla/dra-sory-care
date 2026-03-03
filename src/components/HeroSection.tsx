@@ -30,7 +30,7 @@ const HeroSection = () => {
             Pediatra Puericultor · Prolactancia
           </p>
           <p className="font-body text-base md:text-lg text-muted-foreground max-w-lg animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            Acompañando a madres y bebés con calidez y profesionalismo, desde el corazón y la excelencia médica.
+            Acompaño a madres, bebés y niños con calidez y profesionalismo, desde el corazón y la excelencia médica.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
             <a
